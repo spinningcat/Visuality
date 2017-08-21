@@ -1,0 +1,93 @@
+html,
+body {}
+
+
+.container {
+ // position: absolute;
+
+  top: 0;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content:space-around;
+ 
+}
+.container #menudiv{
+  position:absolute;
+  width:25px;
+  min-height:100%;
+ 
+  
+  border:1px solid black;
+  left: 0;
+}
+.container .subContainer {
+
+  margin:8px;
+  width : 300px;
+
+  top:50px; 
+}
+.container p{
+
+  margin-left:30px;
+}
+
+.container .subContainer .titleBox {
+  margin-top: 10px;
+}
+
+.container .subContainer .titleBox .title {
+  font-family: sans-serif;
+  font-size: 16px/12px;
+  color: blue;
+}
+
+.container .subContainer .infoBox {
+ position:relative;
+  padding: 5px;
+  width: 100%;
+  ;
+  border: 1px solid black;
+  word-break: break-all;
+}
+.info
+{
+  position:absolute;
+ top:5px;
+ right:5px;
+}
+.container .subContainer .infoBox .link1 {
+  display: block;
+  font-family: sans-serif;
+  font-size: 16px/12px;
+}
+
+.container .subContainer .infoBox .link2 {
+  display: block;
+  font-family: sans-serif;
+  font-size: 16px/12px;
+}
+
+.container .subContainer .infoBox .link3 {
+  display: block;
+  font-family: sans-serif;
+  font-size: 16px/12px;
+}
+
+.container .subContainer .infoBox .link4 {
+  display: block;
+  font-family: sans-serif;
+  font-size: 16px/12px;
+}
+
+.container .subContainer .infoBox .link5 {
+  display: block;
+  font-family: sans-serif;
+  font-size: 16px/12px;
+}
+
+.info
+{
+  //float:right;
+  //margin-top:-90px;
+}
