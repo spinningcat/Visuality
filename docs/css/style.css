@@ -1,35 +1,36 @@
 html,
-body {}
-
+body {
+  background-color: rgba(245, 245, 245, 1);
+  font-family: Arial, sans-serif;
+}
 
 .container {
- // position: absolute;
-
+  // position: absolute;
   top: 0;
-  display:flex;
+  display: flex;
   flex-wrap: wrap;
-  justify-content:space-around;
- 
+  justify-content: space-around;
 }
-.container #menudiv{
-  position:absolute;
-  width:25px;
-  min-height:100%;
- 
-  
-  border:1px solid black;
-  left: 0;
+
+.container #menudiv {
+  position: absolute;
+  width: 45px;
+  min-height: 100%;
+  position: fixed;
+  border: 1px solid black;
+  left: 10px;
 }
+
 .container .subContainer {
-
-  margin:8px;
-  width : 300px;
-
-  top:50px; 
+//  box-shadow: 0 7px 0 rgba(255,255,0,0.3);
+  margin: 8px;
+  width: 300px;
+  margin-left: 60px;
+  top: 50px;
 }
-.container p{
 
-  margin-left:30px;
+.container p {
+  margin-left: 60px;
 }
 
 .container .subContainer .titleBox {
@@ -43,19 +44,18 @@ body {}
 }
 
 .container .subContainer .infoBox {
- position:relative;
-  padding: 5px;
+  position: relative;
   width: 100%;
-  ;
-  border: 1px solid black;
   word-break: break-all;
+   box-shadow: 0 7px 0 rgba(255,255,0,0.3);
 }
-.info
-{
-  position:absolute;
- top:5px;
- right:5px;
+
+.info {
+  position: absolute;
+  top: 5px;
+  right: 5px;
 }
+
 .container .subContainer .infoBox .link1 {
   display: block;
   font-family: sans-serif;
@@ -86,8 +86,53 @@ body {}
   font-size: 16px/12px;
 }
 
-.info
-{
+.info {
   //float:right;
   //margin-top:-90px;
+}
+
+.titleBox {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.infoBox {
+  padding: 16px;
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.7);
+  border-radius: 3px;
+  background-color: #ffffff;
+  margin-top: 8px;
+}
+
+.container #menudiv .images {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.container #menudiv .images #github {
+  position: absolute;
+  margin-top: 125px;
+}
+
+.container #menudiv .images #blog {
+  position: absolute;
+  margin-top: 205px;
+}
+
+.container #menudiv .images #in {
+  position: absolute;
+  margin-top: 275px;
+}
+
+.container #menudiv .images #fiddle {
+  position: absolute;
+  margin-top: 345px;
+}
+.container #menudiv .images #email {
+  position: absolute;
+  margin-top: 415px;
+}
+.dialog{
+  display:hidden;
 }
