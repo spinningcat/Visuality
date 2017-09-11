@@ -1,11 +1,13 @@
 html,
 body {
   background-color: rgba(245, 245, 245, 1);
-  font-family: Arial, sans-serif;
+  font-family: 'Playfair Display', serif;
+  font-family: 'Bitter', serif;
+  font : 12px/16px;
 }
 
 .container {
-  // position: absolute;
+  position: absolute;
   top: 0;
   display: flex;
   flex-wrap: wrap;
@@ -17,20 +19,27 @@ body {
   width: 45px;
   min-height: 100%;
   position: fixed;
-  border: 1px solid black;
+ 
   left: 10px;
 }
 
 .container .subContainer {
-//  box-shadow: 0 7px 0 rgba(255,255,0,0.3);
+  position:relative;
   margin: 8px;
   width: 300px;
   margin-left: 60px;
-  top: 50px;
+  top: 150px;
 }
 
 .container p {
-  margin-left: 60px;
+  position: absolute;
+  top:0;
+ width:1000px;;
+  top:10px;
+  padding:5px;
+  border:1px solid black;
+  left:250px;
+  
 }
 
 .container .subContainer .titleBox {
@@ -136,3 +145,26 @@ body {
 .dialog{
   display:hidden;
 }
+ul li {
+  padding: 8px;
+
+}
+ 
+ul li:hover {
+  background-color: inherit !important;
+  box-shadow: none !important;
+}
+ 
+ul {
+  width: 100%;
+  background-color: #F0F0F0;
+  list-style: square;
+}
+a{
+  
+   text-decoration:none;
+   color: rgba(6, 21, 47, 0.75);
+  }
+  a:hover{
+     box-shadow: 6px 8px 12px rgba(0, 0, 0, 0.20);
+  }
