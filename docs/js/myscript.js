@@ -1,5 +1,10 @@
 $(function() {
   var $container = $('.container');
+  
+  var $subContainer = $('.subContainer');
+  var $contentContainer = $('.contentContainer');
+  var box= [];
+  var $menuDiv = $('#menuDiv');
   var objExplain = {
   	'div0': 'This is just an canvas example for getting used to. It is also a try for using prototype and object in javascript for using object oriented style in javascript.',
     'div1': 'This is the work for collection all my reading, code experience and more. That also includes my personal notes.',
@@ -107,10 +112,13 @@ $(function() {
 /*$( window ).on('load',function() {
 	alert('sss');
 });*/
+function insertProcess(){
   var count = 0;
+
   $.each(projectInfo, function(i, item) {
-    var $subContainer = $('<div>');
-    $subContainer.attr('class', 'subContainer');
+  
+    var $boxContent = $('<div>');
+    $boxContent.attr('class', 'boxContent')
     var $titleBox = $('<div>');
     $titleBox.attr('class', 'titleBox');
     var $infoBox = $('<div>');
@@ -121,8 +129,9 @@ $(function() {
 
     var $title = $('<span>');
     $title.attr('class', 'title');
+    $titleBox.appendTo($boxContent);
     $title.appendTo($infoBox);
-    $titleBox.appendTo($subContainer);
+    
     var $link1 = $('<span>');
     $link1.attr('class', 'link1');
     var $link2 = $('<span>');
@@ -137,25 +146,32 @@ $(function() {
     $button.attr('class', 'info');
     $button.attr('id', 'div' + count);
     $button.text('i');
+    $button.prependTo($infoBox);
     $link1.appendTo($infoBox);
     $link2.appendTo($infoBox);
     $link3.appendTo($infoBox);
     $link4.appendTo($infoBox);
     $link5.appendTo($infoBox);
-    $button.appendTo($infoBox);
-    $infoBox.appendTo($subContainer);
-    $subContainer.appendTo($container);
+   
+    $infoBox.appendTo($boxContent)    
+    box.push($boxContent);
+
     count++;
+
   });
+}
+insertProcess();
+
+box.forEach(function(element,index){
+   
+    element.appendTo($contentContainer);
+   
+});
 
 
-
-
-
-  $container.find('.subContainer').each(function(index, ele) {
+   $('.boxContent').each(function(index, ele) {
     //$.each(projectInfo, function(i, item) {
-
-    //console.log("Here's a hint: " + counter++);
+   
     $(ele).find('.mainTitle').html(projectInfo[index].title);
     $(ele).find('.title').html('<a href="' + projectInfo[index].URL + '" target="_blank"> Result: ' + projectInfo[index].title + '</a>');
     if (projectInfo[index].Link1 === "") {
@@ -182,10 +198,14 @@ $(function() {
   
  }
 $('.info').on('click', function(){
-    var arr = $(this).closest('.infoBox').find('.title').text().split(':');
+   // console.log($(this).attr('id'));
     
-    $('.dialog').dialog().dialog('option', 'title',arr[1]);
-    jQuery(".dialog").text(objExplain[$(this).attr('id')]);
+    var objExplainKeyPart = $(this).attr('id');
+    //var index = $(this).attr('id')
+    //console.log(objExplainKeyPart);
+    //console.log(objExplain[objExplainKeyPart]);
+    $('.dialog').dialog().dialog('option', 'title',objExplain[objExplainKeyPart]);
+    jQuery(".dialog").text(objExplain[objExplainKeyPart]);
 });
 /*$('#email').on('click',function(){
    window.location.href = "mailto:mail@example.org";
