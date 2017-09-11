@@ -27,7 +27,7 @@ body {
   flex-direction:column;
   height:100%;
   justify-content:center;
-  
+  padding:10px;
   }
 
 .container .subContainer #menudiv {
@@ -42,10 +42,11 @@ body {
   border-right:6px solid rgba(0, 0, 0, 0.20);
 }
 .titleContainer{
-   height:10%;
-   word-break:break-all;
-
-  
+  display: flex;
+  flex-wrap:wrap;
+  flex-direction:row;
+  width:90%;
+  max-height:90%;
 }
 .container .subContainer #menudiv .images{
   display: flex;
@@ -97,7 +98,7 @@ body {
   flex-wrap:wrap;
   flex-direction:row;
   justify-content:center;;
-  
+
  
 }
 .container .subContainer .contentContainer .boxContent .titleBox .mainTitle{
@@ -180,5 +181,7 @@ a:hover {
   box-shadow: none !important;
   color: #acacac;
 }
-
+.gap{
+  padding:10px;
+}
  
