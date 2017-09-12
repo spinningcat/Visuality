@@ -116,11 +116,13 @@ flex-wrap:wrap;
 flex-direction:column;
   justify-content:flex-end;
   align-items:flex-start;
-  width: 80%;
+  width:70%;
+  height:60%;
   font-size:24px;
   box-shadow: 6px 8px 12px rgba(0, 0, 0, 0.20);
   border:6px solid rgba(0, 0, 0, 0.20);
   padding:10px;
+  color:blue;
   }
 
 .container .subContainer .titleBox .title {
