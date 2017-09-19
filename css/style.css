@@ -2,247 +2,228 @@
 and (min-device-width: 320px) 
 and (max-device-width: 1200px)
 {
-  *{
-    box-sizing: border-box;
-  }
+*{
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: rgba(245, 245, 245, 1);
+  font-family: 'Playfair Display', serif;
+  font-family: 'Bitter', serif;
+  font : 12px/16px;
+  margin:0;
+  padding:0;
+  width:100%;
+  height: 100%;
   
-  html,
-  body {
-    background-color: rgba(245, 245, 245, 1);
-    font-family: 'Playfair Display', serif;
-    font-family: 'Bitter', serif;
-    font : 12px/16px;
-    margin:0;
-    padding:0;
-    width:100%;
-    height: 100%;
-    
-  }
-  
-  .container {
-  
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction:column;
-    justify-content: flex-start;
-    height:100%;
-    width:100%;
-  
-  }  
-  .container .subContainer {
-    display: flex;
-    flex-wrap:wrap;
-    flex-direction:column;
-    height:100%;
-    justify-content:flex-start;
-    align-items:center;
-    width:8%;
-    max-width:8%;
-   
-  
-    }
-  
-  .container .subContainer #menudiv {
-    display: flex;
-    flex-wrap:wrap;
-    flex-direction:column;
-    height:100%; 
-    width:1%;
-    max-width:1%;
-    justify-content: flex-center;
-    align-items:center;
-     font-size:36px;
-    
-    position:fixed; 
-    padding:5px;
-  
-  }
-  .titleContainer{
-    display: flex;
-    flex-wrap:wrap;
-    flex-direction:row;
-    justify-content:flex-start;
-    width:90%;
-    max-height:90%;
-    padding-left:20px;
-    padding-right:20px;
-    padding-top:20px;
-   
-  }
-  .container .subContainer #menudiv .images{
-    display: flex;
-    flex-wrap:wrap;
-    flex-direction:row;
-    justify-content:flex-start;
-    align-items:flex-start;  
-    height:100%;
-  
-      
-  }
-  .fa
-  {
-    
-    padding:20px;
-    margin-top:2%; 
-  
-  }
-  
-  .container  .contentContainer {
-    display: flex;
-    flex-wrap:wrap;
-    flex-direction:row;
-    
-    width:100%;
-    max-width:100%;
-    justify-content:flex-start;;
-    align-items:flex-start;
-  
-    
-  
-  
-    
-    
-  }
-  .container  .contentContainer p {
-    display: flex;
-    flex-wrap:wrap;
-    flex-direction:row;
-    justify-content: center;
-    align-items: center;;
-    padding:10px;
-  
-    font-size:24px;
-    line-height:32px;
-    
-    
-    
-  }
-  
-  .container  .contentContainer .boxContent .titleBox {
-    display: flex;
-    flex-wrap:wrap;
-    flex-direction:row;
-    justify-content:center;;
-    text-align:center;
-  }
-  .container .contentContainer .boxContent .titleBox .mainTitle{
-    display: flex;
-    flex-wrap:wrap;
-    flex-direction:row;
-    justify-content:flex-start;
-    
-    
-    width:100%;
-  }
-  .container  .infoBox {
+}
+
+.container {
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction:row;
+  justify-content: flex-start;
+  height:100%;
+  width:100%;
+
+}  
+.container .subContainer {
   display: flex;
   flex-wrap:wrap;
   flex-direction:column;
-    justify-content:flex-end;
-    align-items:flex-start;
-    width:70%;
-    height:60%;
-    font-size:24px;
-    box-shadow: 6px 8px 12px rgba(0, 0, 0, 0.20);
+ 
+  justify-content:flex-start;
+  align-items:center;
+
+ 
+
+  }
+
+.container .subContainer #menudiv {
+  display: flex;
+  flex-wrap:wrap;
+  flex-direction:column;
+ 
   
-    padding:10px;
-    color:blue;
-    }
-    .lineClass{
-      display:flex;
-      flex-wrap:wrap;
-      align-items:center;
-      justify-content:flex-end;
-      position:fixed;
-      width:15%;
-      max-width:15%;
-      height:100%;
+
+}
+.titleContainer{
+  display: flex;
+  flex-wrap:wrap;
+  flex-direction:row;
+  justify-content:center;
+  width:100vw;
+  max-height:100vw;
+
+  padding:10px;
+
+ 
+}
+.container .subContainer #menudiv .images{
+  display: flex;
+  flex-wrap:wrap;
+  flex-direction:row;
+  justify-content:space-around;
+  align-items:flex-start;  
+  width:100vw;
+
     
-    }
-    .lineClass .line{
-      width:0;
-      height:100%;
-      border-left:6px solid rgba(0, 0, 0, 0.20);
-      
-    }
+}
+.fa
+{
+  font-size:36px;
+  padding-top:3px;
   
-  .container  .titleBox .title {
-    font-family: sans-serif;
-    font-size: 12px;
-    color: blue;
-    
-  }
-  .info {
-    display: flex;
-    flex-wrap:wrap;
-    flex-direction:row;
-    justify-content:flex-end;
-   margin-left:90%;
-    width:10%;
-    border:none;
-    outline:none;
-    background:transparent;
-  }
+
+
+}
+
+.container  .contentContainer {
+  display: flex;
+  flex-wrap:wrap;
+  flex-direction:row;
   
-  .titleBox {
-    font-size: 24px;
-    font-weight: 600;
-  }
+  width:100%;
+  max-width:100%;
+  justify-content:flex-start;;
+  align-items:flex-start;
+
   
-  .infoBox {
-    display:flex;
-    flex-wrap:wrap;
-    padding: 8px;
-    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.7);
-    border-radius: 3px;
-    background-color: #ffffff;
-    margin-top: 8px;;
+
+
   
-  }
-  .boxContent
-  {
   
-    display:flex;
-    flex-wrap:wrap;
-    flex-direction:column;
-    width:45%;
-    max-width:45%;
-    flex-basis:45%; 
-    padding-top:35px; 
-    
-    justify-content:center;;
-    align-items:center}
+}
+.container  .contentContainer p {
+  display: flex;
+  flex-wrap:wrap;
+  flex-direction:row;
+  justify-content: center;
+  align-items: center;;
   
-  .dialog{
-    display:hidden;
-  }
-  ul li {
-    padding: 8px;
+
+  font-size:24px;
+  line-height:32px;
   
+  
+  
+}
+
+.container  .contentContainer .boxContent .titleBox {
+  display: flex;
+  flex-wrap:wrap;
+  flex-direction:row;
+  justify-content:center;;
+  text-align:center;
+  padding:20px;
+}
+.container .contentContainer .boxContent .titleBox .mainTitle{
+  display: flex;
+  flex-wrap:wrap;
+  flex-direction:row;
+  justify-content:flex-start;
+  
+  
+  width:100%;
+}
+.container  .infoBox {
+display: flex;
+flex-wrap:wrap;
+flex-direction:column;
+  justify-content:flex-end;
+  align-items:flex-start;
+  width:70%;
+  height:60%;
+  font-size:24px;
+  box-shadow: 6px 8px 12px rgba(0, 0, 0, 0.20);
+
+
+  color:blue;
   }
-   
-  ul li:hover {
-    background-color: inherit !important;
-    box-shadow: none !important;
-  }
-   
-  ul {
-    width: 100%;
-    background-color: #F0F0F0;
-    list-style: square;
-  }
-  a{
-    
-     text-decoration:none;
-     color: rgba(6, 21, 47, 0.75);
-    }
-  a:hover {
-    box-shadow: none !important;
-    color: #acacac;
-  }
-  .gap{
+  .lineClass{
     display:none;
+  
   }
+
+
+.container  .titleBox .title {
+  font-family: sans-serif;
+  font-size: 12px;
+  color: blue;
+  
+}
+.info {
+  display: flex;
+  flex-wrap:wrap;
+  flex-direction:row;
+  justify-content:flex-end;
+ margin-left:90%;
+  width:10%;
+  border:none;
+  outline:none;
+  background:transparent;
+}
+
+.titleBox {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.infoBox {
+  display:flex;
+  flex-wrap:wrap;
+  padding: 8px;
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.7);
+  border-radius: 3px;
+  background-color: #ffffff;
+  margin-top: 8px;;
+
+}
+.boxContent
+{
+
+  display:flex;
+  flex-wrap:wrap;
+  flex-direction:column;
+  width:100vw;
+  max-width:100vw;
+
+  
+  justify-content:center;;
+  align-items:center}
+
+.dialog{
+  display:hidden;
+}
+ul li {
+  padding: 8px;
+
+}
+ 
+ul li:hover {
+  background-color: inherit !important;
+  box-shadow: none !important;
+}
+ 
+ul {
+  width: 100%;
+  background-color: #F0F0F0;
+  list-style: square;
+}
+a{
+  
+   text-decoration:none;
+   color: rgba(6, 21, 47, 0.75);
+  }
+a:hover {
+  box-shadow: none !important;
+  color: #acacac;
+}
+.gap{
+  padding:none;;
+}
 
 }
 
@@ -317,7 +298,7 @@ body {
   padding-left:20px;
   padding-right:20px;
   padding-top:20px;
- 
+  
 }
 .container .subContainer #menudiv .images{
   display: flex;
@@ -399,8 +380,23 @@ flex-direction:column;
   color:blue;
   }
   .lineClass{
-display:none;
-  }  
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:flex-end;
+    position:fixed;
+    width:15%;
+    max-width:15%;
+    height:100%;
+  
+  }
+  .lineClass .line{
+    width:0;
+    height:100%;
+    border-left:6px solid rgba(0, 0, 0, 0.20);
+    
+  }
+
 .container  .titleBox .title {
   font-family: sans-serif;
   font-size: 12px;
