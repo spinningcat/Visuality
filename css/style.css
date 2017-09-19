@@ -203,7 +203,7 @@ flex-direction:column;
   flex-direction:column;
   width:45%;
   max-width:45%;
-
+  flex-basis:45%; 
   padding-top:35px; 
   
   justify-content:center;;
