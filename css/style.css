@@ -385,8 +385,8 @@ flex-direction:column;
     align-items:center;
     justify-content:flex-end;
     position:fixed;
-    width:15%;
-    max-width:15%;
+    width:1%;
+    max-width:1%;
     height:100%;
   
   }
